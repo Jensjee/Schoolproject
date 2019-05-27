@@ -29,7 +29,7 @@ public class KassaRij {
      * @return Eerste klant in de rij of null
      */
     public Dienblad eerstePersoonInRij() {
-        // method body omitted
+
         if(erIsEenRij()) {
             return this.list.removeFirst();
         }

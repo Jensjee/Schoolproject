@@ -35,7 +35,11 @@ public class Main {
         kassa.eerstePersoonInRij();
         kassa.sluitAchteraan(dienblad);
 
-
+        Kassa kassaGeopend = new Kassa(kassa);
+        kassaGeopend.rekenAf(dienblad);
+        kassaGeopend.aantalArtikelen();
+        kassaGeopend.hoeveelheidGeldInKassa();
+        kassaGeopend.resetKassa();
 
     }
 }

@@ -11,7 +11,7 @@ public class Dienblad {
      * Constructor
      */
     public Dienblad() {
-        // method body omitted
+
     }
     public Dienblad(Persoon klant) {
         this.klant = klant;
@@ -34,8 +34,6 @@ public class Dienblad {
     public void voegToe(Artikel artikel) {
 
         artikelen.add(artikel);
-
-        // method body omitted
     }
 
     /**
@@ -67,6 +65,10 @@ public class Dienblad {
         System.out.println("Totaal is: " + totaal);
 
        return totaal;
+    }
+
+    public Iterator<Artikel> iterator() {
+        return this.artikelen.iterator();
     }
 
 }
