@@ -12,7 +12,6 @@ public class Dienblad {
      */
     public Dienblad() {
         // method body omitted
-
     }
     public Dienblad(Persoon klant) {
         this.klant = klant;
@@ -46,7 +45,7 @@ public class Dienblad {
      */
     public int getAantalArtikelen() {
         // method body omitted
-        int aantal = artikelen.size();
+        int aantal = this.artikelen.size();
         System.out.println("Aantal artikelen: " + aantal);
         return aantal;
     }
@@ -61,7 +60,7 @@ public class Dienblad {
         // method body omitted
 
 
-        for(Artikel a : artikelen) {
+        for(Artikel a : this.artikelen) {
             System.out.println(a.getPrijs());
             totaal += a.getPrijs();
         }

@@ -29,7 +29,11 @@ public class Main {
         dienblad.getAantalArtikelen();
         dienblad.getTotaalPrijs(artik);
 
-
+        KassaRij kassa = new KassaRij();
+        kassa.sluitAchteraan(dienblad);
+        kassa.sluitAchteraan(dienblad2);
+        kassa.eerstePersoonInRij();
+        kassa.sluitAchteraan(dienblad);
 
 
 
