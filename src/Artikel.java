@@ -1,11 +1,11 @@
 public class Artikel {
     private String naam;
-    private int prijs;
+    private float prijs;
 
     public Artikel(){
 
     }
-    public Artikel(String naam, int prijs){
+    public Artikel(String naam, float prijs){
         this.naam = naam;
         this.prijs = prijs;
     }
@@ -17,10 +17,10 @@ public class Artikel {
         this.naam = naam;
     }
 
-    public int getPrijs(){
+    public float getPrijs(){
         return prijs;
     }
-    public void setPrijs(int prijs){
+    public void setPrijs(float prijs){
         this.prijs = prijs;
     }
     public String toString() {
